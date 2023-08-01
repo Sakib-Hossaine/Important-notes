@@ -1,0 +1,22 @@
+//i used in a problem which was a lexographical problem. it means i had to compare
+// problem link : https://codeforces.com/problemset/problem/112/A
+code{
+#include <string.h>
+int stricmp(const char *string1, const char *string2);
+}
+
+ The stricmp() function is available for C++ programs. It is available for C only when the program defines the __cplusplus__strings__ macro.
+
+ code of the solution of that question:
+ #include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  char s[100], s1[100];
+{
+  std::cin>>s>>s1;
+  std::cout<<stricmp(s,s1)<<endl;}
+
+  return 0;
+}
