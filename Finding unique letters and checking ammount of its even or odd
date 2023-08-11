@@ -1,0 +1,11 @@
+    #include<bits/stdc++.h>
+    using namespace std;
+    int main()
+    {
+    set<char> s; 
+//The set::insert is a built-in function in C++ STL which insert elements in the set container or 
+inserts the elements from a position to another position in the set to a different set.
+    char c;
+    while(cin>>c)s.insert(c);
+    cout<<(s.size()%2?"IGNORE HIM!":"CHAT WITH HER!");
+    }
