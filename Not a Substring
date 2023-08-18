@@ -1,4 +1,14 @@
-    #include <bits/stdc++.h>
+A bracket sequence is a string consisting of characters '(' and/or ')'. 
+A regular bracket sequence is a bracket sequence that can be transformed into a correct arithmetic 
+expression by inserting characters '1' and '+' between the original characters of the sequence. For example:
+ 1.bracket sequences "()()" and "(())" are regular (they can be transformed into "(1)+(1)" and "((1+1)+1)", respectively);
+ 2.bracket sequences ")(", "(" and ")" are not regular. 
+
+You are given a bracket sequence s
+; let's define its length as n. Your task is to find a regular bracket sequence t of length 2n such that s 
+does not occur in t as a contiguous substring, or report that there is no such sequence.
+----------------------------------------------------------------------------------------------------------------
+#include <bits/stdc++.h>
     using namespace std;
     int main()
     {	int t;
@@ -18,6 +28,7 @@
     	}
     	return 0;
     }
+=========================================================================================================================
 INPUT :               
 4                     
 )(
