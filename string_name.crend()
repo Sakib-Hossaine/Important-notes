@@ -1,0 +1,48 @@
+This function std::string::crend() returns a constant reverse iterator pointing to the element before the first element in the string
+SYNTAX : std::string::crend()
+----------------------------------------------------------------------------------
+// C++ program to illustrate
+// std::string:crend()
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Driver Code
+int main()
+{
+	// Given string
+	string str("GeeksForGeeks");
+
+	// Find string length
+	int N = str.length();
+
+	// Given character
+	char ch = 'k';
+
+	// To check whether the char is
+	// present or not
+	bool a = true;
+
+	// Traverse the given string using                             INPUT : K
+	// reverse iterator crbegin() and                              OUTPUT :The last index is 11
+	// check if ch is present or not
+	for (auto it = str.crbegin();
+		it != str.crend(); it++) {
+
+		if (*it == ch) {
+			cout << "The last index is "
+				<< N - (it - str.crbegin() + 1)
+				<< endl;
+			a = false;
+			break;
+		}
+	}
+
+	if (a) {
+		cout << "Character is not present";
+	}
+
+	return 0;
+}
+--------------------------------------------------------------------------------------------------------------
