@@ -1,0 +1,31 @@
+constant reverse iterator referring to the last element in the string
+
+Syntax :
+string_name.crbegin()
+-------------------------------------------------------------------------------------------------
+Example Code :
+
+// std::string:crbegin()
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Driver Code
+int main()                                                              INPUT : GeeksForGeeks
+{                                                                       OUTPUT : skeeGroFskeeG
+
+	// Given string
+	string str("GeeksForGeeks");
+
+	// Traverse the given string using
+	// reverse iterator crbegin()
+	for (auto it = str.crbegin();
+		it != str.crend(); it++) {
+
+		// Print the elements
+		cout << *it;
+	}
+	return 0;
+}
+----------------------------------------------------------------------------------------------------------------
