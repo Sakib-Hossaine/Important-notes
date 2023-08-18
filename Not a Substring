@@ -1,0 +1,36 @@
+    #include <bits/stdc++.h>
+    using namespace std;
+    int main()
+    {	int t;
+        cin>>t;
+    	string a;
+    	while (cin>>a){	if ( a== "()"){
+    	    cout<<"NO\n";
+    	    continue;
+    	    }
+    	    cout<<"YES\n";                               
+    	    string d(a.length(),'(');
+        	d+=string(a.length(),')');
+    	       string b="";
+    	    for(int i=0;i<a.length();i++) b+="()";
+        	if(d.find(a) != string::npos) cout<<b<<"\n";
+        	else cout<<d<<"\n"; 
+    	}
+    	return 0;
+    }
+INPUT :               
+4                     
+)(
+(()
+()
+))()
+
+OUTPUT :
+YES
+(())
+YES
+()()()
+NO
+YES
+()(()())
+
