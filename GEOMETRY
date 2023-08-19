@@ -1,4 +1,4 @@
-GEOMETRY FORMULAS:
+ GEOMETRY FORMULAS:
 ====================================================================================================
  
 template <typename T> inline T PointDistanceHorVer(T x1,T y1,T x2, T y2) {return abs(x1-x2)+abs(y1-y2);}
